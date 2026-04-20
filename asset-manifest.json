@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Renewable-Energy-Advisor/static/css/main.210bda3b.css",
+    "main.js": "/Renewable-Energy-Advisor/static/js/main.5c0f9f80.js",
+    "index.html": "/Renewable-Energy-Advisor/index.html",
+    "main.210bda3b.css.map": "/Renewable-Energy-Advisor/static/css/main.210bda3b.css.map",
+    "main.5c0f9f80.js.map": "/Renewable-Energy-Advisor/static/js/main.5c0f9f80.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.210bda3b.css",
+    "static/js/main.5c0f9f80.js"
+  ]
+}
