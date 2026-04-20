@@ -1,6 +1,6 @@
 {
   "short_name": "GridFIS",
-  "name": "Renewable Energy Grid Advisor",
+  "name": "GridFIS — Renewable Energy Grid Advisor",
   "description": "Type-1 Mamdani Fuzzy Inference System for Renewable Energy Grid Load Balancing",
   "icons": [
     {
