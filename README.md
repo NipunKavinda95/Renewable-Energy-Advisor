@@ -2,16 +2,13 @@
 
 A **Type-1 Mamdani Fuzzy Inference System** that advises on the optimal percentage of grid load to supply from renewable energy sources (solar PV + wind turbine + battery storage) based on real-time sensor inputs.
 
-Built as part of the **Fuzzy Logic & Evolutionary Computing** module at **De Montfort University (DMU)**, Leicester, UK.
-
-**Supervised by:** Prof. Francisco Chiclana & Dr. Zacharias Anastassi  
-**Institute:** Institute of Artificial Intelligence (IAI), DMU
+Built as an additional part of the Fuzzy Logic & Evolutionary Computing Assignment that  **Fuzzy Inference System Design** at **De Montfort University (DMU)**, Dubai, UAE.
 
 ---
 
 ## 🌐 Live Demo
 
-> **[Launch GridFIS Web App](https://YOUR-USERNAME.github.io/renewable-energy-fis)**
+> **[Launch GridFIS Web App](https://nipunkavinda95.github.io/Renewable-Energy-Advisor/)**
 
 Installable as a **Progressive Web App (PWA)** on Android and iOS — works offline after first load.
 
@@ -99,7 +96,7 @@ renewable-energy-fis/
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR-USERNAME/renewable-energy-fis
+git clone https://github.com/NipunKavinda95/Renewable-Energy-Advisor
 cd renewable-energy-fis
 
 # Install dependencies
@@ -168,11 +165,11 @@ This system is designed with UAE smart grid applications in mind:
 - Mamdani, E.H. & Assilian, S. (1975). An experiment in linguistic synthesis. *Int. J. Man-Machine Studies*, 7(1), 1–13.
 - Ross, T.J. (2004). *Fuzzy Logic with Engineering Applications*, 2nd ed. Wiley.
 - Hossain, M.A. et al. (2019). Evolution of microgrids. *Int. J. Electrical Power & Energy Systems*, 109, 160–186.
-- Zia, M.F. et al. (2018). Microgrids energy management systems. *Applied Energy*, 222, 1033–1055.
+- Zia, M.F. et al. (2018). Microgrids' energy management systems. *Applied Energy*, 222, 1033–1055.
 
 ---
 
 ## 📄 Licence
 
-This project was developed for academic purposes at De Montfort University.  
-© 2026 — Fuzzy Logic & Evolutionary Computing Assignment
+This project was developed by Nipun Kavinda, engaging with a university assignment.  
+© 2026 — Fuzzy Logic & Evolutionary Computing 
