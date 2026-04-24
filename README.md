@@ -4,8 +4,19 @@ A **Type-1 Mamdani Fuzzy Inference System** that advises on the optimal percenta
 
 Built as part of the **Fuzzy Logic & Evolutionary Computing** module at **De Montfort University (DMU)**, Leicester, UK.
 
-**Supervised by:** Prof. Francisco Chiclana & Dr. Zacharias Anastassi  
+**Supervised by:** Prof. Francisco Chiclana & Dr. Zacharias Anastassi
 **Institute:** Institute of Artificial Intelligence (IAI), DMU
+
+---
+
+## 👨‍💻 Author
+
+**Nipun Kavinda**
+
+Postgraduate student at De Montfort University, Leicester, UK, specialising in Artificial Intelligence and Machine Learning. Background in software engineering with hands-on experience in fuzzy logic systems, IoT integration, React web development, and smart energy applications. Actively seeking opportunities in AI-driven smart systems and energy technology, particularly within UAE markets including ADNOC and the broader Gulf energy sector.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/YOUR-LINKEDIN)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat&logo=github)](https://github.com/YOUR-USERNAME)
 
 ---
 
@@ -32,9 +43,9 @@ The FIS takes 4 real-time sensor inputs and produces a crisp advisory output:
 |---|---|---|
 | Renewable Output | 0–100% | VeryLow, Low, Medium, High, VeryHigh |
 
-**Rule base:** 15 non-redundant Mamdani rules (Ross 2004, Chapter 9 criteria)  
-**Defuzzification:** Centroid method  
-**AND operator:** min  
+**Rule base:** 15 non-redundant Mamdani rules (Ross 2004, Chapter 9 criteria)
+**Defuzzification:** Centroid method
+**AND operator:** min
 **OR operator:** max
 
 ---
@@ -59,35 +70,19 @@ The FIS takes 4 real-time sensor inputs and produces a crisp advisory output:
 ```
 renewable-energy-fis/
 │
-├── matlab/
-│   ├── RenewableEnergyFIS_FINAL.mlx     ← MATLAB Live Script (main FIS code)
-│   ├── RenewableEnergyAdvisor.fis        ← Saved FIS file for deployment
-│   └── figures/                          ← All 14 generated PNG figures
-│       ├── fig1_input_mfs.png
-│       ├── fig2_fis_architecture.png
-│       ├── fig3_test_cases.png
-│       └── ...
-│
-├── python/
-│   └── fig2_fis_architecture.py          ← FIS architecture diagram generator
-│
 ├── src/
-│   ├── FuzzyEnergyApp.jsx                ← Main React component + fuzzy engine
-│   ├── App.js                            ← App entry point
-│   ├── index.js                          ← React root with PWA registration
-│   ├── index.css                         ← Global styles
-│   └── serviceWorkerRegistration.js      ← PWA service worker registration
+│   ├── FuzzyEnergyApp.jsx            ← Main React component + JS fuzzy engine
+│   ├── App.js                        ← App entry point
+│   ├── index.js                      ← React root with PWA registration
+│   ├── index.css                     ← Global styles
+│   └── serviceWorkerRegistration.js  ← PWA service worker registration
 │
 ├── public/
-│   ├── index.html                        ← HTML with PWA meta tags
-│   ├── manifest.json                     ← PWA manifest (name, icons, theme)
-│   ├── service-worker.js                 ← Offline caching service worker
-│   └── icons/                            ← App icons (192x192, 512x512)
+│   ├── index.html                    ← HTML with PWA meta tags
+│   ├── manifest.json                 ← PWA manifest
+│   └── service-worker.js             ← Offline caching
 │
-├── report/
-│   └── FuzzyLogic_Report_FINAL.docx      ← Assignment report
-│
-├── package.json                          ← React dependencies + deploy scripts
+├── package.json                      ← Dependencies + deploy scripts
 └── README.md
 ```
 
@@ -128,51 +123,37 @@ Open `http://localhost:3000` in your browser.
 
 ---
 
-## 🔧 MATLAB Requirements
-
-To run the `.mlx` file:
-- MATLAB R2021a or newer
-- Fuzzy Logic Toolbox
-
-```matlab
-% Load and test the saved FIS
-fis = readfis('RenewableEnergyAdvisor.fis');
-output = evalfis(fis, [800 18 85 30]);  % Returns 79.96%
-```
-
----
-
 ## 📱 App Features
 
-- **Dashboard** — 4 live sliders + real-time gauge output
-- **MF Charts** — Visual membership function plots with current μ values
-- **Output Curve** — Aggregated fuzzy output distribution with centroid marker
+- **Dashboard** — 4 live sensor sliders + real-time gauge output
+- **MF Charts** — Membership function plots with live μ values
+- **Output Curve** — Aggregated fuzzy output with centroid marker
 - **Rules Panel** — All 15 rules with firing status and α-cut strength
 
 ---
 
 ## 🌍 Real-World Relevance
 
-This system is designed with UAE smart grid applications in mind:
+Designed with UAE smart grid applications in mind:
 
 - Aligned with **UAE Energy Strategy 2050** (44% clean energy target)
 - Relevant to **ADNOC** smart operations and energy management
-- Architecture extendable to real-time IoT sensor integration via MQTT
-- Future work: Type-2 FIS extension, ROS2 node integration, reinforcement learning rule weight tuning
+- Extendable to real-time IoT sensor integration via MQTT
+- Future work: Type-2 FIS, ROS2 node integration, reinforcement learning
 
 ---
 
 ## 📚 Key References
 
 - Zadeh, L.A. (1965). Fuzzy sets. *Information and Control*, 8(3), 338–353.
-- Mamdani, E.H. & Assilian, S. (1975). An experiment in linguistic synthesis. *Int. J. Man-Machine Studies*, 7(1), 1–13.
+- Mamdani & Assilian (1975). Linguistic synthesis. *Int. J. Man-Machine Studies*, 7(1).
 - Ross, T.J. (2004). *Fuzzy Logic with Engineering Applications*, 2nd ed. Wiley.
-- Hossain, M.A. et al. (2019). Evolution of microgrids. *Int. J. Electrical Power & Energy Systems*, 109, 160–186.
-- Zia, M.F. et al. (2018). Microgrids energy management systems. *Applied Energy*, 222, 1033–1055.
+- Hossain et al. (2019). Evolution of microgrids. *Int. J. Electrical Power & Energy Systems*.
+- Zia et al. (2018). Microgrids energy management. *Applied Energy*, 222.
 
 ---
 
 ## 📄 Licence
 
-This project was developed for academic purposes at De Montfort University.  
-© 2026 — Fuzzy Logic & Evolutionary Computing Assignment
+Developed for academic purposes at De Montfort University.
+© 2026 Nipun Kavinda — Fuzzy Logic & Evolutionary Computing
